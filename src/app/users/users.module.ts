@@ -14,7 +14,8 @@ import { HttpModule }    from '@angular/http';
     // TitleComponent,
     // FooterComponent,
     FilterPipe,
-    UsersComponent
+    UsersComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -23,7 +24,8 @@ import { HttpModule }    from '@angular/http';
     SubModule
   ],
   exports: [
-    UsersComponent
+    UsersComponent,
+
   ],
   providers: [],
 })

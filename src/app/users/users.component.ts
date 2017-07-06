@@ -2,6 +2,7 @@ import { Component ,OnInit} from '@angular/core';
 import { Http, RequestOptions ,Headers } from '@angular/http';
 import { Observable } from 'rxjs';
 import { HttpService } from './http.service';
+import { Todos } from './todos';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { HttpService } from './http.service';
 })
 export class UsersComponent implements OnInit {
   inputHint = 'What needs to be done?';  //輸入框預設字串
-  todos: any[] = [];  //todo陣列
+  todos: Todos[] ;  //todo陣列
   todo = '';
   filterType = 'All';
   toggleAll = false;
@@ -67,6 +68,7 @@ export class UsersComponent implements OnInit {
     this.httpservice.saveTodos(newTodos).subscribe(data => {
       this.todo = '';
       this.todos = data;
+      console.log("todo",this.todos);
     });
 
     // this.todos.push({

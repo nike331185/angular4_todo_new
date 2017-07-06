@@ -1,10 +1,12 @@
+import { Todos } from './todos';
 import { Injectable } from '@angular/core';
 import { Http, RequestOptions ,Headers } from '@angular/http';
 import { Observable } from 'rxjs';
 
+
 @Injectable()
 export class HttpService {
-   todos: any[] = [];  //todo陣列
+   todos: Todos[] = [];  //todo陣列
 
    private requestOptions = new RequestOptions({
     headers: new Headers({
