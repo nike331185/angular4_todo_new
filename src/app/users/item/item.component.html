@@ -1,0 +1,6 @@
+<div class="view">
+	 <input class="toggle" type="checkbox" [(ngModel)]="item.done" (ngModelChange)="updateState()">
+	  <label>{{item.text | uppercase}}</label>
+		<button class="destroy" (click)="remove(item)"></button>
+</div>
+<input class="edit" value="Rule the web">

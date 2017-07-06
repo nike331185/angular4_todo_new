@@ -7,6 +7,7 @@ import { UsersComponent } from './users.component';
 // import { FooterComponent } from './footer/footer.component';
 import { FilterPipe } from './filter.pipe';
 import { HttpModule }    from '@angular/http';
+import { ItemComponent } from './item/item.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HttpModule }    from '@angular/http';
     // FooterComponent,
     FilterPipe,
     UsersComponent,
+    ItemComponent,
 
   ],
   imports: [
